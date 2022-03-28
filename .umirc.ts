@@ -12,7 +12,7 @@ export default defineConfig({
   // hash: true,
 
   scripts: ['https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js'],
-  favicon: '/images/favicon.ico',
+  favicon: './images/favicon.ico',
 
   proxy: {
 
@@ -45,5 +45,5 @@ export default defineConfig({
   },
   outputPath: 'docs',
   publicPath: './',
-  history: { type: 'hash' },
+  // history: { type: 'hash' },
 });
