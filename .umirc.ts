@@ -28,11 +28,13 @@ export default defineConfig({
 
   routes: [
     // { path: '/login', component: '@/pages/login' },
-    // { path: '/apps', component: '@/pages/apps' },
+    // { path: '/apps', component: '@/pages/apps' },    
     {
       path: '/',
       component: '@/layouts/index',
-      routes: [{ path: '/', component: '@/pages/index' }],
+      routes: [
+        { path: '/', component: '@/pages/index' },     
+      ],
     },
     // { component: '@/components/404' },
   ],

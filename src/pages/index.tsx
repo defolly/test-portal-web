@@ -53,6 +53,9 @@ export default (props: any) => {
                   <div>2021-12-10 14:32</div>
                   <div>详情</div>
                 </div>
+                <div>
+                  <a href='/test-uc-web/excel/用户管理导入模板.xlsx'>下载导入模板</a>
+                </div>
               </div>
             </div>
           </Col>

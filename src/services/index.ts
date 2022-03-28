@@ -56,42 +56,13 @@ export const getMenu = async (projectId: string) => {
             "url": null
           }],
         "companyId": "1",
-        "id": "1060715505384738818",
-        "menuIcon": null,
-        "menuId": "1060715505384738818",
+        "id": "1",
+        "menuIcon": null,     
         "menuName": "权限管理",
         "projectId": "1",
         "resourceId": "0",
         "url": null
-      }, {
-        "companyId": "1",
-        "id": "2",
-        "menuIcon": null,
-        "menuName": "系统设置",
-        "permissionVal": null,
-        "projectId": "1",
-        "resourceId": "0",
-        "url": null,
-        "children":
-          [{
-            "children": [],
-            "companyId": "1",
-            "id": "163089580024298259",
-            "menuIcon": null,
-            "menuName": "系统配置",
-            "projectId": "1",
-            "resourceId": "1186112937450115073",
-            "url": null,
-          }, {
-            "children": [],
-            "companyId": "1",
-            "id": "163089580024237656",
-            "menuIcon": null,
-            "menuName": "系统主题",
-            "projectId": "1",
-            "url": null,
-          }],
-      },],
+      }],
     total: undefined
   }
 }

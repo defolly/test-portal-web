@@ -29,8 +29,10 @@ export default function index(props: any) {
     <Layout className="layout-page">
       <Sider className="layout-menu" collapsed={collapsed}>
         <div className="logo">
+
           <img src="./images/logo.png" alt="logo" />
           {collapsed ? '' : <span> XX科技</span>}
+
         </div>
         <Menus />
       </Sider>
@@ -43,7 +45,9 @@ export default function index(props: any) {
 
           <div style={{ paddingLeft: '20px' }}>
             {/* <Link to={'/apps'} title="切换产品"> */}
+            <Link to="/">
               {project?.projectName}
+            </Link>
             {/* </Link> */}
           </div>
 

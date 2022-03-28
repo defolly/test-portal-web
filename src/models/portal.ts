@@ -61,7 +61,7 @@ export default function portal() {
         const mApp = microApp.find((o: any) => o.entry === path);
         if (mApp) {
           item.microApp = mApp.name;
-          item.microUrl = mApp.path + url.slice(1);
+          item.microUrl = mApp.path  + url.slice(1);
         }
         items.push(item);
       }

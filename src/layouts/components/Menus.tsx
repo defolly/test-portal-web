@@ -70,6 +70,7 @@ export default () => {
     <Menu
       mode={'inline'}
       theme="dark"
+      defaultOpenKeys={['1']}
     >
       {renderItem(menus)}
     </Menu>
