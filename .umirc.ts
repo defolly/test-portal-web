@@ -44,5 +44,6 @@ export default defineConfig({
     baseNavigator: false,
   },
   outputPath: 'docs',
+  publicPath: './',
   history: { type: 'hash' },
 });
