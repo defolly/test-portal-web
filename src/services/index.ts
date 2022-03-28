@@ -24,35 +24,6 @@ export const getMenu = async (projectId: string) => {
     flag: { retCode: '0', retMsg: 'success' },
     rows: [
       {
-        "companyId": "1",
-        "id": "2",
-        "menuIcon": null,
-        "menuName": "系统设置",
-        "permissionVal": null,
-        "projectId": "1",
-        "resourceId": "0",
-        "url": null,
-        "children":
-          [{
-            "children": [],
-            "companyId": "1",
-            "id": "163089580024298259",
-            "menuIcon": null,
-            "menuName": "系统配置",
-            "projectId": "1",
-            "resourceId": "1186112937450115073",
-            "url": "/test-uc-web/#/config",
-          }, {
-            "children": [],
-            "companyId": "1",
-            "id": "163089580024237656",
-            "menuIcon": null,
-            "menuName": "系统主题",
-            "projectId": "1",
-            "url": "/test-uc-web/#/theme",
-          }],
-      },
-      {
         "children":
           [{
             "children": [],
@@ -72,7 +43,7 @@ export const getMenu = async (projectId: string) => {
             "menuName": "角色管理",
             "projectId": "1",
             "resourceId": "6",
-            "url": null,
+            "url": "/test-uc-web/#/role",
           },
           {
             "children": [],
@@ -92,7 +63,35 @@ export const getMenu = async (projectId: string) => {
         "projectId": "1",
         "resourceId": "0",
         "url": null
-      }],
+      }, {
+        "companyId": "1",
+        "id": "2",
+        "menuIcon": null,
+        "menuName": "系统设置",
+        "permissionVal": null,
+        "projectId": "1",
+        "resourceId": "0",
+        "url": null,
+        "children":
+          [{
+            "children": [],
+            "companyId": "1",
+            "id": "163089580024298259",
+            "menuIcon": null,
+            "menuName": "系统配置",
+            "projectId": "1",
+            "resourceId": "1186112937450115073",
+            "url": null,
+          }, {
+            "children": [],
+            "companyId": "1",
+            "id": "163089580024237656",
+            "menuIcon": null,
+            "menuName": "系统主题",
+            "projectId": "1",
+            "url": null,
+          }],
+      },],
     total: undefined
   }
 }
@@ -120,7 +119,7 @@ export const getMicroApp = async () => {
     //   path: '/pms-web/',
     //   dev: 'http://localhost:8020',
     // },  
-     // {
+    // {
     //   name: 'test-pos-web',
     //   entry: '/test-pos-web/',
     //   path: '/pos-web/',

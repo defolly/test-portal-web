@@ -4,18 +4,18 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-
-  dynamicImport: {
-    loading: '@/components/Loading',
-  },
-  hash: true,
   ignoreMomentLocale: true,
+
+  // dynamicImport: {
+  //   loading: '@/components/Loading',
+  // },
+  // hash: true,
 
   scripts: ['https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js'],
   favicon: '/images/favicon.ico',
 
   proxy: {
-   
+
   },
 
   antd: {
@@ -43,4 +43,6 @@ export default defineConfig({
   locale: {
     baseNavigator: false,
   },
+  outputPath: 'docs',
+  history: { type: 'hash' },
 });
