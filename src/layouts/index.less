@@ -1,0 +1,147 @@
+.layout-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .layout-menu {
+    height: 100%;
+    background: #002f7b !important;
+    overflow-y: auto;
+    z-index: 5;
+
+    .logo {
+      height: 64px;
+      background: #0042a6;
+      color: #fff;
+      font-weight: 500;
+      line-height: 50px;
+      font-size: 20px;
+      text-align: center;
+
+      .img {
+        width: 50px;
+      }
+
+      span {
+        margin-left: 10px;
+        white-space: nowrap;
+      }
+    }
+
+    ul.ant-menu,
+    ul.ant-menu-submenu {
+      background-color: transparent;
+    }
+  }
+
+  .layout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 30px;
+    z-index: 4;
+    position: absolute;
+    box-shadow: 0 2px 8px #f0f1f2;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+    background: #fff;
+    font-size: 15pt;
+
+    .tool {
+      flex: 1;
+      text-align: right;
+
+      > input {
+        margin-right: 20px;
+        width: 180px;
+      }
+
+      > span.anticon,
+      > span.ant-badge {
+        margin-right: 20px;
+        font-size: 15pt;
+      }
+
+      > span.ant-avatar {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .layout-body {
+    margin: 0;
+    height: 100vh;
+    padding: 75px 10px 10px 10px;
+    overflow: auto;
+
+    > div,
+    div[id^='__qiankun_microapp_wrapper_'] {
+      height: 100%;
+    }
+
+    > iframe {
+      display: block;
+      border: none;
+      overflow: auto;
+      position: absolute;
+      background: #fff;
+      top: 75px;
+      left: 10px;
+      width: calc(100% - 20px);
+      height: calc(100% - 85px);
+      z-index: 1;
+    }
+  }
+}
+
+.user-info {
+  display: inline-block;
+  font-size: 12px;
+  line-height: normal;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 6px;
+}
+
+.popover-wrapper {
+  > div {
+    padding: 8px 10px;
+    min-width: 120px;
+    cursor: default;
+
+    &:hover {
+      background: #efefef;
+    }
+  }
+}
+
+.msg-badge {
+  sup {
+    padding: 0 2px;
+    right: -1px;
+  }
+}
+
+.project-list {
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 1px 2px 8px #888888;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c9c9c9;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+  }
+}
