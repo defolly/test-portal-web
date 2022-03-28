@@ -6,21 +6,12 @@ export default defineConfig({
   },
   ignoreMomentLocale: true,
 
-  // dynamicImport: {
-  //   loading: '@/components/Loading',
-  // },
-  // hash: true,
-
   scripts: ['https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js'],
   favicon: './images/favicon.ico',
 
-  proxy: {
-
-  },
+  proxy: {},
 
   antd: {
-    // dark: true, // 开启暗色主题
-    // compact: true, // 开启紧凑主题
   },
   theme: {
     'primary-color': '#FA8500',
@@ -33,10 +24,9 @@ export default defineConfig({
       path: '/',
       component: '@/layouts/index',
       routes: [
-        { path: '/', component: '@/pages/index' },     
+        { path: '/', component: '@/pages/index' },
       ],
     },
-    // { component: '@/components/404' },
   ],
   fastRefresh: {},
   qiankun: {
@@ -47,5 +37,6 @@ export default defineConfig({
   },
   outputPath: 'docs',
   publicPath: './',
+  hash: true,
   // history: { type: 'hash' },
 });
